@@ -52,6 +52,10 @@ while (addTask === "yes") {
       //Add the new task object to the existing array
       tasks.push(newTask);
       window.alert("New Task Added!");
+      //Condition to exit loop if user does not want to add a new abject
+    } else if ((addTask = "no")) {
+      window.alert("Okay. No new Tasks.");
+    }
     //Condition to exit loop if number tasks limit is reached
   } else {
     window.alert(
