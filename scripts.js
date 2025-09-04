@@ -76,3 +76,7 @@ while (addTask === "yes") {
     addTask = "no";
   }
 }
+
+//Return all tasks
+console.log("All Tasks: ", tasks);
+
