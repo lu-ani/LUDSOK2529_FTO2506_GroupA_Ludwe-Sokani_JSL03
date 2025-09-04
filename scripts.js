@@ -40,6 +40,18 @@ while (addTask === "yes") {
         "Would you like to add a new task?: YES / NO "
       ).toLowerCase();
     }
+    //Another if statement that runs when both prior conditions are met
+    if (addTask === "yes" && tasks.length < 6) {
+      //Initialise the new task object
+      newTask = {};
+      //Set the new id number to be 1 more than the previous on the list
+      newTask.id = tasks.length + 1;
+      newTask.title = prompt("Enter the Task title: ");
+      newTask.description = prompt("Enter the Task description: ");
+      newTask.status = prompt("Enter the Task status");
+      //Add the new task object to the existing array
+      tasks.push(newTask);
+      window.alert("New Task Added!");
     //Condition to exit loop if number tasks limit is reached
   } else {
     window.alert(
