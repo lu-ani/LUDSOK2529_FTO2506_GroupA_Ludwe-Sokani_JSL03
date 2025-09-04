@@ -22,3 +22,10 @@ const initialTasks = [
 
 //Add the existing objects to the new array name
 const tasks = initialTasks;
+
+//Initialise the while loop on a positive so it runs at least once
+let addTask = "yes";
+
+//While loop to run whenever a user wants to add a task and exits when the user doesn't want to add one
+while (addTask === "yes") {
+}
