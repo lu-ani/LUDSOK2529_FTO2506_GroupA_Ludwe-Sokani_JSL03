@@ -28,4 +28,17 @@ let addTask = "yes";
 
 //While loop to run whenever a user wants to add a task and exits when the user doesn't want to add one
 while (addTask === "yes") {
+  //Condition so that the user cannot add more than 6 tasks
+  if (tasks.length < 6) {
+    addTask = prompt(
+      "Would you like to add a new task?: YES / NO "
+    ).toLowerCase();
+    //Condition to exit loop if number tasks limit is reached
+  } else {
+    window.alert(
+      "There are enough tasks on your board, please check them in the console."
+    );
+    //Change the value of addTask to negative to exit loop on next iteration
+    addTask = "no";
+  }
 }
