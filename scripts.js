@@ -80,3 +80,6 @@ while (addTask === "yes") {
 //Return all tasks
 console.log("All Tasks: ", tasks);
 
+//Initialize completed task array
+completedTasks = [];
+
