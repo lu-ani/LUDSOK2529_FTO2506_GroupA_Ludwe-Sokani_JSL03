@@ -83,3 +83,11 @@ console.log("All Tasks: ", tasks);
 //Initialize completed task array
 completedTasks = [];
 
+//Loop through each task
+tasks.forEach((task) => {
+  //If the task status is "done" then run this code otherwise do nothing and go onto the next
+  if (task.status === "done") {
+    //If the tasks status is "done" then add the task to completedTasks
+    completedTasks.push(task);
+  }
+});
