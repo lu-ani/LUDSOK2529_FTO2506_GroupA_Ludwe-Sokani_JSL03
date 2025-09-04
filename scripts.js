@@ -49,6 +49,17 @@ while (addTask === "yes") {
       newTask.title = prompt("Enter the Task title: ");
       newTask.description = prompt("Enter the Task description: ");
       newTask.status = prompt("Enter the Task status");
+      //Condition to ensure the status is one of the accepted values
+      while (
+        newTask.status !== "todo" &&
+        newTask.status !== "doing" &&
+        newTask.status !== "done"
+      ) {
+        window.alert("Tasks can only be todo, doing or done!");
+        newTask.status = prompt(
+          "Enter the Task Status: (todo, doing or done)"
+        ).toLowerCase();
+      }
       //Add the new task object to the existing array
       tasks.push(newTask);
       window.alert("New Task Added!");
