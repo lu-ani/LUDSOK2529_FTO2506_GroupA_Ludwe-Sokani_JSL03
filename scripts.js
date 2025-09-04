@@ -33,6 +33,13 @@ while (addTask === "yes") {
     addTask = prompt(
       "Would you like to add a new task?: YES / NO "
     ).toLowerCase();
+    //Condition to ensure the status is one of the accepted values
+    while (addTask !== "yes" && addTask !== "no") {
+      window.alert("Unclear. Only input yes or no.");
+      addTask = prompt(
+        "Would you like to add a new task?: YES / NO "
+      ).toLowerCase();
+    }
     //Condition to exit loop if number tasks limit is reached
   } else {
     window.alert(
