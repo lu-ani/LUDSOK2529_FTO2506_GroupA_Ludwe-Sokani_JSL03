@@ -91,3 +91,6 @@ tasks.forEach((task) => {
     completedTasks.push(task);
   }
 });
+
+//Return all the tasks with status "done"
+console.log("Completed Tasks: ", completedTasks);
