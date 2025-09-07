@@ -1,5 +1,8 @@
 # JSL03 Project Brief: Console-Based Task Manager
 
+Challange 3 from the Codespace Javascript Language (JSL) course. The challange is to update the existing codebase to take user inputs and include them in an existing array as an object. There checks that need to be passed for the users object to be valid and also a limit to how many objects a user can add. Once the user is done, the information should be logged into the console, showing all the tasks and also those which are completed.
+
+
 ## Key Objectives
 Logic & User Interaction:
 
